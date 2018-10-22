@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import "./BlockJadwal.css";
+import React, {Component} from "react";
 
 class BlockJadwal extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       isHover: false
     };
@@ -16,12 +16,7 @@ class BlockJadwal extends Component {
   };
 
   render() {
-    let hoverStyle;
-    if (this.state.isHover) {
-      hoverStyle = { transform: "scale(1.05)" };
-    } else {
-      hoverStyle = { transform: "scale(1)" };
-    }
+    let hoverStyle = {transform: (this.state.isHover) ? "scale(1.05)" : "scale(1)"};
 
     return (
       <div
@@ -33,17 +28,17 @@ class BlockJadwal extends Component {
         <div className="column jadwal">
           <div className="level is-mobile">
             <div className="level-left">
-              <p className="is-uppercase">{this.props.shalat}</p>
+              <p className="is-uppercase">{this.props.prayName}</p>
             </div>
             <div className="level-right">
               <p className="has-text-weight-bold is-size-4 is-size-5-mobile">
-                {this.props.waktu}
+                {this.props.prayTime}
               </p>
             </div>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
