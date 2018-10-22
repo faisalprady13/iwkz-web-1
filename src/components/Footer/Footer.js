@@ -76,13 +76,13 @@ const Footer = () => {
         </div>
         <div className="level-right">
           <div className="level-item">
-            <a className="" target="_blank" href="https://lapordirijerman.de/" style={transition: "none"} >
+            <a className="" target="_blank" href="https://lapordirijerman.de/" style={{transition: "none"}} >
               <span className="icon">
-                <i class="fab fa-facebook"></i>
+                <i className="fab fa-facebook"></i>
               </span>
             </a>
             <a className="" target="_blank" href="https://lapordirijerman.de/" >
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
             </a>
           </div>
         </div>
